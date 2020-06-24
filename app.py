@@ -1,5 +1,5 @@
 from flask import Flask
-from .pred_request import *
+from pred_request import *
 
 app = Flask(__name__)
 # FLASK_APP=main flask run
