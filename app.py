@@ -8,6 +8,7 @@ app = Flask(__name__)
 def root():
     return {"message": "Hello World"}
 
+@app.route("/predictions", methods=['POST'])
 def predict():
     request_json = request.get_json()
     user_input = request_json.get("user_input")
