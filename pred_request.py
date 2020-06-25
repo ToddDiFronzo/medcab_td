@@ -21,12 +21,12 @@ dataset_pickle.close()
 class PredRequest(BaseModel):
     user_input: str
 
-    class Config:
-        schema_extra = {
-            "example": {
-                "user_input": "happy, relaxed"
-            }
-        }
+    # class Config:
+    #     schema_extra = {
+    #         "example": {
+    #             "user_input": "happy, relaxed"
+    #         }
+    #     }
     def pred(self):
         user_input = self.user_input
 
